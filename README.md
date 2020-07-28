@@ -1,2 +1,4 @@
-# hackerrank
-My solutions to the proposed problems in hackerrank
+# HackerRank
+
+My solutions to the proposed problems in HackerRank.
+In Haskell.
