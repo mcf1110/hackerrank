@@ -1,0 +1,6 @@
+-- https://www.hackerrank.com/challenges/sherlock-and-squares
+  r :: [String] -> (Int, Int)
+  r (a:b:_) = (read a, read b)
+  sq = map (^2) [1..]
+  hmb (a, b) = length $ filter (>=a) $ takeWhile (<=b) $ sq
+  main = interact $ unlines . map (show . hmb . r . words) . tail . lines
